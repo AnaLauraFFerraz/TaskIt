@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taskit/pages/todo_list_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,18 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: TodoListPage(),
-    );
-  }
-}
-
-class TodoListPage extends StatelessWidget {
-  const TodoListPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.lightBlue,
     );
   }
 }
